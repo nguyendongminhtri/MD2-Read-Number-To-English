@@ -133,6 +133,14 @@ public class SuDungToanTu {
             default:
                 readHundred = "";
         }
-        System.out.println("Read number: "+readHundred+ " "+readDozens+"-"+ readUnits+ " "+readNumber);
+        if(number<=10){
+            System.out.println("Read number: "+readUnits);
+        }
+        if(number<=13){
+            System.out.println("Read number: "+readHundred+ " "+readDozens+ " "+readNumber);
+        } else {
+            System.out.println("Read number: "+readHundred+ " "+readDozens+"-"+ readUnits+ " "+readNumber);
+        }
+
     }
 }
